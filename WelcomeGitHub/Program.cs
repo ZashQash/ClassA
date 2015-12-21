@@ -16,6 +16,14 @@ namespace WelcomeGitHub
             int b = 9;
 
             int c = a + b;
+
+            read();
+        }
+
+        private static void read()
+        {
+            Console.WriteLine("Read Something");
+            Console.ReadKey();
         }
     }
 }
