@@ -33,23 +33,28 @@ namespace Server_GUI
             sock.Bind(new IPEndPoint(IPAddress.Any/* 0 */, 1996));
             sock.Listen(0);
 
-            new Thread(delegate ()
+           
+
+            #region Thread
+            new Thread(delegate()
             {
                 accept = sock.Accept();
-                MessageBox.Show("CONNECTION ACCEPTED");
+                MessageBox.Show("CONNECTION ACCEPTED", "Server");
+                // After we have connection, we dispose the listner Socket.
                 sock.Close();
 
-                try
+                while (true)
                 {
-                    while (true)
+                    try
                     {
                         byte[] buffer = new byte[255];
-                        int readByte = sock.Receive(buffer, 0, buffer.Length, 0);
-
+                        int readByte = accept.Receive(buffer, 0, buffer.Length, 0);
+                        
                         if (readByte <= 0)
                         {
                             throw new SocketException();
                         }
+
 
                         Array.Resize(ref buffer, readByte);
 
@@ -61,17 +66,24 @@ namespace Server_GUI
                         {
                             lstbDisplay.Items.Add(Encoding.Default.GetString(buffer));
                         });
+
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("DISCONNECTION!", "Server");
+                        break;
                     }
                 }
-                catch (Exception)
-                {
-                    MessageBox.Show("DISCONNECTION!");
-                    Application.Exit();
-                }
-
+                Application.Exit();
             }).Start();
 
+            #endregion
+        }
 
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+            byte[] data = Encoding.Default.GetBytes(txtbSend.Text);
+            accept.Send(data, 0, data.Length, 0);
         }
     }
 }
