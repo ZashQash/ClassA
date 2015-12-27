@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socket Code", "Socket Code\Socket Code.csproj", "{91E16050-E45C-4B26-89B0-0B4E7B6B2512}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server Simple", "Server Simple\Server Simple.csproj", "{32EC73C8-B897-4A13-B98B-F1EA9436EA32}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server SimpleL1", "Server Simple\Server SimpleL1.csproj", "{32EC73C8-B897-4A13-B98B-F1EA9436EA32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client Simple", "Client Simple\Client Simple.csproj", "{D62F61C6-3538-4A51-AB27-829129C336D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client SimpleL1", "Client Simple\Client SimpleL1.csproj", "{D62F61C6-3538-4A51-AB27-829129C336D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server Medium", "Server Medium\Server Medium.csproj", "{0124E53E-29EB-4EE9-A605-CB68495A2D49}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server MediumL2", "Server Medium\Server MediumL2.csproj", "{0124E53E-29EB-4EE9-A605-CB68495A2D49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client Medium", "Client Medium\Client Medium.csproj", "{AC15F647-1E6F-46A6-B1C2-B5F12F615569}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client MediumL2", "Client Medium\Client MediumL2.csproj", "{AC15F647-1E6F-46A6-B1C2-B5F12F615569}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server_GUI", "Server_GUI\Server_GUI.csproj", "{E2C91ED0-CF80-442F-ACE8-0C5DBE178EB3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server_GUIL3", "Server_GUI\Server_GUIL3.csproj", "{E2C91ED0-CF80-442F-ACE8-0C5DBE178EB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client_GUI", "Client_GUI\Client_GUI.csproj", "{CB0A6E6F-B779-401D-B041-AC9CF26C7C8C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client_GUIL3", "Client_GUI\Client_GUIL3.csproj", "{CB0A6E6F-B779-401D-B041-AC9CF26C7C8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test ServerL4", "Test ServerL4\Test ServerL4.csproj", "{D838B28D-D01E-4E9D-88D8-9AD36CB63CC4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{CB0A6E6F-B779-401D-B041-AC9CF26C7C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB0A6E6F-B779-401D-B041-AC9CF26C7C8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB0A6E6F-B779-401D-B041-AC9CF26C7C8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D838B28D-D01E-4E9D-88D8-9AD36CB63CC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D838B28D-D01E-4E9D-88D8-9AD36CB63CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D838B28D-D01E-4E9D-88D8-9AD36CB63CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D838B28D-D01E-4E9D-88D8-9AD36CB63CC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
